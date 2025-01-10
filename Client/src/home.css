@@ -1,0 +1,177 @@
+/* home.css */
+
+:root {
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.5rem;
+    --body-color: #fff;
+    --first-color: #007bff;
+    --text-color-light: #aaa;
+    --font-medium: 500;
+    --second-color: #f39c12;
+    --smaller-font-size: 0.875rem;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(221, 100%, 8%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home {
+    background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(221, 100%, 8%) 30%);
+    padding-bottom: 0;
+  }
+  
+  .home__container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(221, 100%, 8%) 30%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 4rem;
+    row-gap: 3.5rem;
+  }
+  
+  .home__form {
+    padding: 20px;
+    border-radius: 8%;
+    background-color: #fff;
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .home__images {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .home__orbe {
+    width: 265px;
+    height: 284px;
+    background: linear-gradient(180deg, hsl(0, 0%, 16%) 93%, hsl(0, 0%, 67%) 100%);
+    border-radius: 135px 135px 0 0;
+  }
+  
+  .home__img {
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 195px 195px 12px 25px;
+    display: inline-flex;
+    align-items: flex-end;
+    /* bottom: -1.5rem; */
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+  }
+  
+  h1.head-1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin: 8px 0;
+    color: #636262;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .switch-field {
+    display: flex;
+    margin: 10px;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    gap:10px;
+  }
+  
+  .switch-field input[type="radio"] {
+    display: none;
+  }
+  
+  .switch-field label {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .switch-field input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+/* CSS for Select Option */
+
+.location {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE2IDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzMzMyI+PHBhdGggZD0iTTguNzM1IDhMMTYgMC42MjUgMTQuODQ0IDBMMCA3LjM3NUw3LjE1NiA4IDguNzM1IDh6Ii8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.location option {
+  padding: 10px;
+  color: #333;
+  background-color: #fff;
+}
+  
+  .submit {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .img {
+    background-image: url('../src/assets/home.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+  .floatLabel{
+    margin-left: -12px;
+    width: 20px;
+  }
+  
